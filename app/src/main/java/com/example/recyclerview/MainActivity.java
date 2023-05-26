@@ -34,13 +34,41 @@ MyAdapter adapter;
         //Nombres banda
         NombreBanda.add("The doors");
         NombreBanda.add("Black Sabbath");
+        NombreBanda.add("Pink Floyd");
+        NombreBanda.add("Ramones");
+        NombreBanda.add("Dead Kennedy");
+        NombreBanda.add("The Cramps");
+        NombreBanda.add("The Who");
+        NombreBanda.add("Roling Stones");
+        NombreBanda.add("Megadeth");
+        NombreBanda.add("Metallica");
+        NombreBanda.add("Queen");
+
         //Descripciones
         Des.add("The Doors fue una banda de rock estadounidense, formada en Los Ángeles, California en julio de 1965 y disuelta en 1973.");
+        Des.add("Black Sabbath fue una banda británica de heavy metal y hard rock formada en 1968 en Birmingham por Tony Iommi, Ozzy Osbourne.");
+        Des.add("Pink Floyd es una banda de rock británica, fundada en Londres en 1965. Considerada un icono cultural del siglo XX.");
         Des.add("Es una banda europea jeje");
-        //img banda
+        Des.add("Es una banda europea jeje");
+        Des.add("Es una banda europea jeje");
+        Des.add("Es una banda europea jeje");
+        Des.add("Es una banda europea jeje");
+        Des.add("Es una banda europea jeje");
+        Des.add("Es una banda europea jeje");
+        Des.add("Es una banda europea jeje");
+        //Lista de las bandas
         listaLogos.add(R.drawable.doors_img);
-        listaLogos.add(R.drawable.dk_image);
+        listaLogos.add(R.drawable.vol4);
         listaLogos.add(R.drawable.pink_floyd_img);
+        listaLogos.add(R.drawable.ramones_img);
+        listaLogos.add(R.drawable.dk_image);
+        listaLogos.add(R.drawable.cramps_img);
+        listaLogos.add(R.drawable.who_img);
+        listaLogos.add(R.drawable.roling_img);
+        listaLogos.add(R.drawable.mega_img);
+        listaLogos.add(R.drawable.metallica_img);
+        listaLogos.add(R.drawable.queen_img);
+
         adapter.notifyDataSetChanged();
         adapter.setOnItemClickListener(new MyAdapter.OnItemClickListener() {
             @Override
