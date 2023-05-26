@@ -33,7 +33,7 @@ MyAdapter adapter;
         Recyclerview = findViewById(R.id.recyvlerView);
         Recyclerview.setLayoutManager(new LinearLayoutManager(this));
         //Creacion de la instancia de la lista
-        adapter = new MyAdapter(NombreBanda,Des,gps,listaLogos);
+        adapter = new MyAdapter(NombreBanda,Des,listaLogos);
         Recyclerview.setAdapter(adapter);
         //Nombres banda
         NombreBanda.add("The doors");
@@ -83,6 +83,7 @@ MyAdapter adapter;
         gps.add("google.streetview:cbll=52.477873,-1.911008=&cbp=3,75,158.8,77.6");
         gps.add("google.streetview:cbll=40.729464,-73.845649=&cbp=3,75,158.8,77.6");
         gps.add("google.streetview:cbll=50.822458,-0.430013=&cbp=3,75,158.8,77.6");
+        gps.add("google.streetview:cbll=50.822458,-0.430013=&cbp=3,75,158.8,77.6");
         //pagina de las bandas
         pagina.add("https://thedoors.com");
         pagina.add("https://www.blacksabbath.com");
@@ -115,6 +116,7 @@ MyAdapter adapter;
          email.add("dead_kennedy_oficial@deadkennedy.com");
         email.add("the_cramps_oficial@thecramps.com");
          email.add("the_who_oficial@thewho.com");
+         email.add("the_roling_stones@rolingstones.com");
         email.add( "megadeth_oficial@megadeth.com");
        email.add("metallica_oficial@metallica.com");
         email.add("queen_oficial@queen.com");
@@ -124,7 +126,7 @@ MyAdapter adapter;
         adapter.setOnItemClickListener(new MyAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-               Toast.makeText(getApplicationContext(),"presionaste item :"+position,Toast.LENGTH_LONG).show();
+               Toast.makeText(getApplicationContext(),"Has presionado la posicion: "+position+"\n"+"La banda es: "+NombreBanda.get(position),Toast.LENGTH_LONG).show();
                 Bundle envioDatos = new Bundle();
                     envioDatos.putString("Titulo", String.valueOf(NombreBanda.get(position)));
                     envioDatos.putString("Des",String.valueOf(Des.get(position)));

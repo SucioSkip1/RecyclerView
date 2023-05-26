@@ -12,16 +12,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
-    private final List<String> NombreBanda,des,gps;
+    private final List<String> NombreBanda,des;
     private final List<Integer> logo;
 
     //Crear una variable de instancia
     private OnItemClickListener listener;
-    public MyAdapter(List<String> NombreBanda, List<String> des, List<String> gps, List<Integer> logo)
+    public MyAdapter(List<String> NombreBanda, List<String> des, List<Integer> logo)
     {
         this.NombreBanda = NombreBanda;
         this.des = des;
-        this.gps = gps;
         this.logo = logo;
     }
 

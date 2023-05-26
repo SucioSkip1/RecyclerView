@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RecyclerView</string>
+    <string name="app_name">Bandas de Rock</string>
     <string name="btn_gps">GPS</string>
     <string name="btn_Tel">Telefono</string>
     <string name="btn_correo">Correo</string>
